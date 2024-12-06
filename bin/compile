@@ -122,4 +122,4 @@ pushd $CACHED_BUILD_DIR/app > /dev/null
 cp -rv ./ $BUILD_DIR 2>&1 | indent
 popd > /dev/null
 
-du -h $BUILD_DIR
+du -h $BUILD_DIR | sort -h
